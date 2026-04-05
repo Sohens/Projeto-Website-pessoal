@@ -1,0 +1,134 @@
+*{
+    font-size: 20px;
+}
+
+fieldset{
+    border-radius: 15px;
+
+}
+
+img{
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    border-radius: 8px;
+}
+    
+
+.container{
+    display: flex;
+}
+
+img, p{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.fotomatriz{
+    width: 750px;
+}
+
+.esboço{
+    width: 750px;
+}
+.img{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+}
+.lele{
+    width: 1500px;
+
+}
+
+
+
+.menu a {
+    display: block;           
+    
+    /* O padding deve estar DENTRO do "a" para aumentar a área de clique */
+    padding: 30px 20px;       
+    
+    /* Cores e estilo */
+    background-color: indigo;
+    color: rgba(165, 65, 237, 0.619);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+    /* Espaço entre os botões */
+    margin-bottom: 10px;      
+    border-radius: 8px;
+}
+
+/* Efeito para quando o mouse passar por cima */
+.menu a:hover {
+    background-color: #ffffff;
+    transform: scale(1.02); /* Dá um leve aumento */
+}
+
+
+
+
+
+/*parte para contatos*/
+.hub-contatos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.grid-contatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: #6a1b9a;
+}
+
+.icone {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.texto h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #6a1b9a;
+}
+
+.texto span {
+    font-size: 13px;
+    color: #888;
+}
+
+/* Cores de destaque no hover (opcional) */
+.email:hover { border-left: 5px solid indigo; }
+.whatsapp:hover { border-left: 5px solid indigo; }
+.instagram:hover { border-left: 5px solid indigo; }

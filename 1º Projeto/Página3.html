@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>PWSP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <meta  name="description" content="Um website pessoal">
+        <link rel="shortcut icon" href="img/logopag.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0; padding: 0;
+                font-size: 30px;
+            }
+
+
+            body{
+                font-family: sans-serif, Arial, Helvetica;
+            }
+
+            header{
+                background-color: #2c3e50;
+                color: darkgray;
+                text-align: center;
+                padding: 10px;
+                font-size: 15px;
+            }
+
+            nav{
+                background: rgb(64, 60, 72);
+                float: left;
+                padding: 20px;
+                height: 1700px;
+                width: 13%;
+            }
+
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+
+            article{
+                background-color: rgba(86, 16, 108, 0.56);
+                color: rgb(1, 0, 0);
+                float: left;
+                padding: 20px;
+                height: 1700px;
+                width: 87%;
+            }
+
+            section::after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+
+            footer{
+                background-color: black;
+                color: linen;
+                text-align: center;
+                padding: 10px;
+            }
+
+        </style>
+ 
+    </head>
+
+    <body>
+        <header>
+            <h1>Projetos Acadêmicos e Laboratório</h1>
+        </header>
+    
+    <section>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.htlm.html" target="_self">Apresentação do Aluno</a></li>
+                <li><a href="Página2.html" target="_self">Detalhes do aluno</a></li>
+                <li><a href="Página3.html" target="_self">Potfólios e Projetos</a></li>
+                <li><a href="Página4.html" target="_self">Novidades</a></li>
+                <li><a href="Página5.html" target="_self">Página para contato</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Desenvolvimento de sistemas embarcados, lógica digital e simulações de circuitos. 🗂️</h1>
+            <div class="container">
+                <img src="img/p1.jpeg" class="fotomatriz" alt=" Projeto Matriz de leds">
+                O projeto foi estruturado utilizando vetores (arrays) para organizar as portas de saída. Desenvolvi uma função específica, turnOnCell(int l, int c), que permite acionar qualquer LED da matriz informando apenas as coordenadas de linha e coluna, facilitando a criação de padrões visuais e animações.<br>
+                <br>
+                Este projeto é a base para o funcionamento de painéis de mensagens (letreiros digitais) e telas de dispositivos eletrônicos. O domínio dessa lógica permite criar interfaces visuais de baixo custo para sistemas embarcados e dispositivos de IoT.<br>
+                <br>
+                Neste projeto, explorei os fundamentos da eletrônica digital e programação em C++. O objetivo foi controlar uma matriz de 9 LEDs através da lógica de multiplexação, otimizando o uso dos pinos de E/S do Arduino Uno.<br>
+               <br>
+               Destaques técnicos:<br>
+               <br>
+               1º-Hardware: Uso de resistores para proteção e organização de barramentos de linhas e colunas.<br>
+               <br>
+               2º-Software: Implementação de loops for para varredura e funções parametrizadas para controle de coordenadas.<br>
+               <br>
+               3º-Desafio: Sincronização de sinais para evitar 'fantasmas' (ghosting) entre os LEDs vizinhos.<br>
+               <br>
+            </div>
+            <p></p><br>
+            <br>
+            <p></p><br>
+            <br>
+
+            <div class="container">
+                <img src="img/p2.jpeg" class="esboço" alt="Esboço do circuito do projeto de matriz dos leds">
+                O desenho do quadro nos mostra o planejamento e a teoria do projeto de matriz de leds.<br>
+                <br>
+                Este projeto documenta o desenvolvimento da lógica de controle para periféricos. Antes de programar a matriz de LEDs, desenhei o fluxo de sinais e as portas lógicas necessárias para garantir o acionamento correto das colunas e linhas, otimizando a seleção de endereços.<br>
+                <br>
+                Desenvolvimento de um contador digital de dois dígitos utilizando displays de 7 segmentos. Apliquei a lógica de multiplexação e varredura temporal aprendida na matriz de LEDs para controlar os 14 segmentos necessários com eficiência de pinos, gerenciando a exibição via código.<br>
+                <br>
+                Antes da implementação no hardware, realizei o mapeamento completo do fluxo de dados. Defini como os sinais de entrada (sensores ou botões) interagem com a lógica de controle para gerar as respostas desejadas nas saídas (LEDs ou Atuadores).<br>
+                <br>
+                Fiz a ponte entre o diagrama elétrico e o código em C++. Ao definir a pinagem e as variáveis de hardware ainda no quadro, consegui prever conflitos de portas e organizar o código de forma mais limpa, utilizando arrays para otimizar a manipulação dos pinos do Arduino.<br>
+                <br>
+                Destaques:<br>
+                <br>
+                1º-Modelagem de Sinais: Mapeamento de entradas e saídas (I/O) para controle de periféricos via Serial.<br>
+                <br>
+                2º-Lógica Booleana: Aplicação de portas lógicas (NAND/NOR/XOR) para sistemas de decisão condicional.<br>
+                <br>
+                3º-Documentação de Processo: Demonstração da capacidade de planejar sistemas complexos antes da fase de prototipagem, reduzindo erros de montagem e depuração de código.<br>
+                <br>
+
+
+
+            </div>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Espero que goste</p>
+    </footer>
+    </body>
+</html>
